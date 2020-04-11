@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone"
+        android:id="@+id/login_progress"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Loading Please wait...."
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:id="@+id/tvLoad"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_form"
+        android:orientation="vertical">
+<ImageView
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    android:src="@drawable/lock"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/et1Mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Please enter your EMAIL"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et1Password"
+            android:hint="password"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/bt1Login"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LOgin" />
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/bt1Register"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="register" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv1Reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:text="Forgot Password? Reset Here" />
+
+    </LinearLayout>
+
+</LinearLayout>
